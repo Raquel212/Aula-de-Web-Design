@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/Icon.png" />
+    <title>Aula | Atividade 01</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Fundo: Chuva de código -->
+    <div class="code-rain"></div>
+
+    <!-- Modal de Boas-vindas -->
+    <div id="welcome-modal">
+        <div class="modal-content">
+            <h2>Bem-vindo(a)! 🚀</h2>
+            <p style="margin-bottom: 1.5rem; color: #666;">Insira os seus dados para começar.</p>
+            <input type="text" id="user-name-input" placeholder="O seu nome">
+            <input type="number" id="user-age-input" placeholder="A sua idade">
+            <button class="btn" onclick="startApp()" style="width: 100%;">Começar Aula</button>
+        </div>
+    </div>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>🌟 Aula de Web Design</h1>
+        <p id="date-display" style="color: #4f46e5; font-weight: 500;"></p>
+        <p id="user-greeting" style="font-size: 1.2rem; margin-top: 0.5rem; font-weight: 600;"></p>
+    </header>
+
+    <div class="glass-card">
+        <main class="main-content">
+            <div>
+                <p style="font-size: 1.5rem; line-height: 1.4; margin-bottom: 1.5rem;">
+                    Domine o <strong>HTML, CSS e JS</strong> para criar experiências incríveis na web.
+                </p>
+                
+                <div style="margin-bottom: 1rem; display: flex; gap: 1rem; align-items: center;">
+                    <button class="btn" onclick="toggleInfo()">Saiba Mais</button>
+                    <a href="https://jovemtech.dev.br" target="_blank" style="color: #4f46e5; font-weight: bold; text-decoration: none;">Ver Site 🔗</a>
+                </div>
+
+                <div id="info">
+                    <p style="margin-bottom: 0.5rem;"><strong>HTML:</strong> A estrutura (esqueleto) da página.</p>
+                    <p style="margin-bottom: 0.5rem;"><strong>CSS:</strong> O estilo (visual) e cores.</p>
+                    <p style="margin-bottom: 0.5rem;"><strong>JS:</strong> A interatividade (cérebro) do site.</p>
+                </div>
+            </div>
+
+            <div class="img-container">
+                <img src="/Img01.png" alt="[Imagem de um computador portátil com código e uma chávena de café]" onerror="this.src='https://via.placeholder.com/300x200?text=Coding+Illustration'">
+            </div>
+        </main>
+    </div>
+
+    <!-- Portfólio -->
+    <div class="portfolio-cta">
+        <a href="https://raquel212.github.io/Portifolio2/" target="_blank" class="btn btn-portfolio"> Venha conhecer os meus projetos</a>
+    </div>
+
+    <!-- Cards -->
+    <div class="cards-grid">
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">HTML</div>
+                <div class="card-back">Conteúdo</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">CSS</div>
+                <div class="card-back">Design</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">JS</div>
+                <div class="card-back">Lógica</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lab -->
+    <div class="lab-section glass-card">
+        <h3>Laboratório de JavaScript</h3>
+        <p id="js-demo-text">Clique nos botões abaixo para interagir com este texto 👇</p>
+        <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+            <button class="btn" style="background: white; color: #4f46e5; border: 2px solid #4f46e5;" onclick="mudarTexto()">Trocar Texto</button>
+            <button class="btn" style="background: white; color: #4f46e5; border: 2px solid #4f46e5;" onclick="mudarCor()">Trocar Cor</button>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
